@@ -152,8 +152,8 @@ if __name__ == '__main__':
     # 循环执行每对用户名、密码和ChatGPT密钥的组合
     for credentials in config.user_credentials:
         hostname = 'hostloc.com'
-        username = credentials['username']
-        password = credentials['password']
+        username = markslee['username']
+        password = Lys020408['password']
         # 随机选择一个ChatGPT密钥
         chatgpt_key = random.choice(config.chatgpt_keys)
         discuz = Discuz(hostname, username, password, chatgpt_key)
